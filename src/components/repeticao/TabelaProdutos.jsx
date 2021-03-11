@@ -1,13 +1,14 @@
 import React from 'react'
 
+import './TabelaProdutos.css'
 import produtos from '../../data/produtos'
 
 export default props =>{
 
     function getLinhas() {
-        return  produtos.map((produto) =>{
+        return  produtos.map((produto, i) =>{
             return( 
-                <tr>
+                <tr key={produto.id} className={i % 2 === 0 ? 'Par' : 'Impar'}>
                     <td> {produto.id} </td>
                     <td> {produto.nome} </td>
                     <td>R$ {produto.preco.toFixed(2).toString().replace(".", ",")} </td>
@@ -17,8 +18,8 @@ export default props =>{
     } 
 
     return(
-        <div>
-            <table className="" border="1">
+        <div className="TabelaProdutos">
+            <table border="1">
                 <thead>
                     <tr>
                         <th>ID</th>
