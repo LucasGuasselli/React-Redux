@@ -12,6 +12,7 @@ import FamiliaMembro from './components/basics/FamiliaMembro';
 import ListaAlunos from "./components/repeticao/ListaAlunos"
 import ListaProdutos from "./components/repeticao/TabelaProdutos"
 import ParOuImpar from "./components/condicional/ParOuImpar"
+import UsuarioInfo from "./components/condicional/UsuarioInfo"
 
 
 //underline representa que o unico parametro da function nao sera usado
@@ -24,6 +25,8 @@ export default _ => (
 
             <Card titulo="#08 - Renderização Condicional" color="#982395">
                 <ParOuImpar numero={23} />
+                <UsuarioInfo usuario={{ nome: 'Fernando'}} />
+                <UsuarioInfo usuario={{ nome: ''}} />
             </Card>
 
             <Card titulo="#07 - Desafio Repetição" color="#3A9AD9">
