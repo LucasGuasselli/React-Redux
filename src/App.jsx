@@ -13,6 +13,7 @@ import ListaAlunos from "./components/repeticao/ListaAlunos"
 import ListaProdutos from "./components/repeticao/TabelaProdutos"
 import ParOuImpar from "./components/condicional/ParOuImpar"
 import UsuarioInfo from "./components/condicional/UsuarioInfo"
+import DiretaPai from "./components/comunicacao/DiretaPai"
 
 
 //underline representa que o unico parametro da function nao sera usado
@@ -22,6 +23,10 @@ export default _ => (
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+
+            <Card titulo="#09 - Comunicação Direta (do pai para o filho)" color="#982395">
+               <DiretaPai/>
+            </Card>
 
             <Card titulo="#08 - Renderização Condicional" color="#982395">
                 <ParOuImpar numero={23} />
