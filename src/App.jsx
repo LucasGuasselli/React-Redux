@@ -16,6 +16,8 @@ import UsuarioInfo from "./components/condicional/UsuarioInfo"
 import DiretaPai from "./components/comunicacao/DiretaPai"
 import IndiretaPai from "./components/comunicacao/IndiretaPai"
 import Input from "./components/formulario/Input"
+import Contador from "./components/contador/Contador"
+import Mega from "./components/mega/Mega"
 
 
 //underline representa que o unico parametro da function nao sera usado
@@ -25,6 +27,14 @@ export default _ => (
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+
+            <Card titulo="#13 - Desafio Mega" color="#848484">
+                <Mega qtde={5}/>
+            </Card>
+
+            <Card titulo="#12 - Contador" color="#424242">
+                <Contador numeroInicial={10}></Contador>
+            </Card>
 
             <Card titulo="#11 - Componente Controlado" color="#ff2395">
                 <Input/>
